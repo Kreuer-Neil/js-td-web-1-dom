@@ -6,73 +6,74 @@ http://icant.co.uk/articles/domessentials/
 */
 
 /* 1. Cibler l'élément d'id nav */
-
+document.getElementById("nav");
 
 /* 2. Récupérer tous les li */
-
+document.querySelectorAll("li");
 
 /* 3. Cibler le 4e li */
-
+document.getElementById("nav").children[3];
+document.querySelector("li:nth-child(4)");
 
 /* 4. Compter le nombre de li dans la page */
-
+document.getElementById("nav").children.length;
 
 /* 5. Cibler le premier li pair */
-
+document.querySelector("li:nth-child(odd)");
 
 /* 6. Récupérer tous les li de classe impair */
-
+const impairs = document.querySelectorAll(".impair");
 
 /* a) afficher ce qu'on obtient */
-
+console.log(impairs);
 
 /* b) afficher le 2e li de classe impair */
-
+console.log(impairs[1])
 
 /* c) afficher chacun des li impair */
-
-
+for (const impair of impairs) {
+    console.log(impair);
+}
 
 /* d) compter le nombre de li de classe impair dans la page */
-
+impairs.length;
 
 
 /* 7. Cibler le 4e li puis, à partir de là, cibler son frère juste avant lui */
-
-
+document.querySelector("li:nth-child(3)")
 
 /* 8. Cibler le 4e li puis, à partir de là, cibler le suivant */
-
-
+document.querySelector("li:nth-child(5)")
 
 /* 9. Cibler le parent du 4e li */
 
 
 
 /* 10. Récupérer tous les enfants de l'ul */
-
+const mesUL = document.getElementById("nav").children
 
 /* a) afficher ce qu'on obtient */
+console.log(mesUL)
 
 /* b) cibler le 1er enfant de l'ul */
-
+mesUL[0];
 
 /* c) cibler le dernier enfant de l'ul */
-
+mesUL[mesUL.length-1];
 
 /* c) cibler le 4e enfant de l'ul */
-
+mesUL[3];
 
 
 /* 11. Chaînage de méthodes - que retournent les expressions suivantes ? */
 /* a) document.getElementById("nav"). getElementsByTagName("li")[3].firstChild */
-
+//le 1er enfant du 4e li, donc a
 
 /* b) document. getElementsByTagName("li")[2].childNodes[3].firstChild */
-
+//idk
 
 /* c) document. getElementsByTagName("li")[2].firstChild.firstChild */
-
+//la chaîne de caractères "Photos"
 
 
 /* 12. Afficher les propriétés (nom du nœud, type de nœud, valeur du nœud) d'un nœud
