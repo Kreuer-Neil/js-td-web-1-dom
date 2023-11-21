@@ -11,3 +11,12 @@ DOM - PREPA 8 : « Couleurs » :
    (utilisez soit le nom anglais de la couleur, soit le format hexadécimal, soit le format RGB) :' ;
 2. Utilisez ces couleurs pour satisfaire les préférences de votre utilisateur
 */
+
+const couleur = prompt('Choisissez une couleur de texte (merci de donner son nom en anglais ou son code hexadécimal ou RGB pour assurer que ça fonctionne)');
+
+document.head.childNodes[5].insertAdjacentHTML('beforeend',`body {color: ${couleur};}`)
+
+/* derrière 'auto;'
+/tbody {color: couleur;}
+
+ */

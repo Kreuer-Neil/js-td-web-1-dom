@@ -28,7 +28,7 @@ const impairs = document.querySelectorAll(".impair");
 console.log(impairs);
 
 /* b) afficher le 2e li de classe impair */
-console.log(impairs[1])
+console.log(impairs[1]);
 
 /* c) afficher chacun des li impair */
 for (const impair of impairs) {
@@ -40,20 +40,20 @@ impairs.length;
 
 
 /* 7. Cibler le 4e li puis, à partir de là, cibler son frère juste avant lui */
-document.querySelector("li:nth-child(3)")
+document.querySelector("li:nth-child(3)");
 
 /* 8. Cibler le 4e li puis, à partir de là, cibler le suivant */
-document.querySelector("li:nth-child(5)")
+document.querySelector("li:nth-child(5)");
 
 /* 9. Cibler le parent du 4e li */
 
 
 
 /* 10. Récupérer tous les enfants de l'ul */
-const mesUL = document.getElementById("nav").children
+const mesUL = document.getElementById("nav").children;
 
 /* a) afficher ce qu'on obtient */
-console.log(mesUL)
+console.log(mesUL);
 
 /* b) cibler le 1er enfant de l'ul */
 mesUL[0];
@@ -86,26 +86,27 @@ mesUL[3];
 
 
 /* 13. Changer le texte "Photos" en "Visuals" */
-
-
+//document.querySelector("li:nth-child(4)").firstChild.textContent = "Visuals";
 
 /* 14. Modifier les attributs d'un élément */
 /* a) Changer la valeur de l'attribut href du lien "Photos" en "photos.php" */
+//document.querySelector("li:nth-child(4)").firstChild.href = "photos.php";
 
 
-/* a) Lui ajouter un attribut title avec la valeur "voir mes photos" */
-
+/* b) Lui ajouter un attribut title avec la valeur "voir mes photos" */
+//document.querySelector("li:nth-child(4)").firstChild.title = "voir mes photos";
 
 /* 15. Supprimer le dernier li du menu
-       (faites-le en utilisant la méthode querySelector pour cible l'ul
+       (faites-le en utilisant la méthode querySelector pour cibler l'ul
         et querySelectorAll pour cibler les li)
-*/
-
+*//*
+console.log(
+    document.querySelector("ul")
+)
 
 
 /* 16. Ajouter un li à la fin de la liste */
-
-
+document.getElementById("nav").insertAdjacentHTML('beforeend','<li id="li7" class="pair"><a href="#">Li supplémentaire</a></li>')
 
 
 /* 17. Ajouter un lien dans le menu. Ce lien doit
@@ -124,14 +125,17 @@ mesUL[3];
 	  - ajouter une boîte de dialogue au survol avec le texte "voir la galerie" 
 	  - changer la cible du lien en "visuals.html " */
 
+document.querySelector("li:nth-child(4)").firstChild.textContent = "Visuals";
+document.querySelector("li:nth-child(4)").firstChild.title = "voir ma galerie";
+document.querySelector("li:nth-child(4)").firstChild.href = "visuals.html";
 
 
 
 
 /* 19. Dupliquer le li "Photos" et s'en servir pour ajouter un lien
 	   - juste après le lien "Photos"
-	   - dont le libellé est "Visuals" 
-	   - avec une boîte de dialogue au survol qui affiche le texte "voir la galerie" 
+	   - dont le libellé est "Visuals"
+	   - avec une boîte de dialogue au survol qui affiche le texte "voir la galerie"
 	   - qui pointe vers la page "visuals.html " */
 
 
